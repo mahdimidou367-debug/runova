@@ -16,7 +16,7 @@
     <!-- RUNOVA CSS -->
     <link
         rel="stylesheet"
-        href="./css/style.css?v=2"
+        href="./style.css?v=3"
     >
 
 
@@ -32,14 +32,11 @@
 <body>
 
 
-    <!-- ================= NAVBAR ================= -->
-
     <header class="navbar">
 
         <div class="logo">
             RUN<span>OVA</span>
         </div>
-
 
         <div class="nav-buttons">
 
@@ -56,14 +53,222 @@
 
 
 
-    <!-- ================= RUN PAGE ================= -->
-
     <main class="dashboard">
 
 
-        <!-- HEADER -->
-
         <div class="dashboard-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    RUN TRACKER
+                </p>
+
+                <h1>
+                    Your Run
+                </h1>
+
+                <p class="goal-text">
+                    Track your run in real time.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <span>
+                    Time
+                </span>
+
+                <strong id="runTime">
+                    00:00:00
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Distance
+                </span>
+
+                <strong id="runDistance">
+                    0.00 km
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Speed
+                </span>
+
+                <strong id="runSpeed">
+                    0.0 km/h
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    Pace
+                </span>
+
+                <strong id="runPace">
+                    --:-- /km
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="dashboard-card">
+
+            <p class="eyebrow">
+                GPS STATUS
+            </p>
+
+            <h2 id="gpsStatus">
+                Ready
+            </h2>
+
+            <p
+                class="goal-text"
+                id="gpsMessage"
+            >
+                Press Start Run to begin tracking your location.
+            </p>
+
+        </section>
+
+
+
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        LIVE MAP
+                    </p>
+
+                    <h2>
+                        Your Route
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="runMap"
+                class="run-map"
+            ></div>
+
+        </section>
+
+
+
+        <section class="run-controls">
+
+
+            <button
+                id="startRun"
+                class="primary-btn"
+            >
+                Start Run
+            </button>
+
+
+            <button
+                id="pauseRun"
+                class="secondary-btn"
+                disabled
+            >
+                Pause
+            </button>
+
+
+            <button
+                id="stopRun"
+                class="secondary-btn"
+                disabled
+            >
+                Finish Run
+            </button>
+
+
+        </section>
+
+
+
+        <section class="dashboard-card">
+
+            <p class="eyebrow">
+                ENERGY
+            </p>
+
+            <h2>
+                Calories
+            </h2>
+
+
+            <div class="profile-big-number">
+
+                <span id="runCalories">
+                    0
+                </span>
+
+                <small>
+                    kcal
+                </small>
+
+            </div>
+
+
+            <p class="goal-text">
+                Calories are estimated using your profile information and running data.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- LEAFLET JS -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
+
+
+    <!-- RUNOVA JS -->
+    <script
+        src="./app.js?v=3"
+    ></script>
+
+
+</body>
+
+</html>        <div class="dashboard-heading">
 
             <div>
 
