@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -14,14 +13,14 @@
     <title>Run | RUNOVA</title>
 
 
+    <!-- RUNOVA CSS -->
     <link
         rel="stylesheet"
-        href="css/style.css"
+        href="./css/style.css?v=2"
     >
 
 
-    <!-- LEAFLET MAP -->
-
+    <!-- LEAFLET CSS -->
     <link
         rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -38,16 +37,14 @@
     <header class="navbar">
 
         <div class="logo">
-
             RUN<span>OVA</span>
-
         </div>
 
 
         <div class="nav-buttons">
 
             <a
-                href="dashboard.html"
+                href="./dashboard.html"
                 class="login-btn"
             >
                 Dashboard
@@ -74,16 +71,12 @@
                     RUN TRACKER
                 </p>
 
-
                 <h1>
                     Your Run
                 </h1>
 
-
                 <p class="goal-text">
-
                     Track your run in real time.
-
                 </p>
 
             </div>
@@ -96,13 +89,11 @@
 
         <section class="stats-grid">
 
-
             <div class="stat-card">
 
                 <span>
                     Time
                 </span>
-
 
                 <strong id="runTime">
                     00:00:00
@@ -117,7 +108,6 @@
                     Distance
                 </span>
 
-
                 <strong id="runDistance">
                     0.00 km
                 </strong>
@@ -130,7 +120,6 @@
                 <span>
                     Speed
                 </span>
-
 
                 <strong id="runSpeed">
                     0.0 km/h
@@ -145,13 +134,11 @@
                     Pace
                 </span>
 
-
                 <strong id="runPace">
                     --:-- /km
                 </strong>
 
             </div>
-
 
         </section>
 
@@ -161,35 +148,28 @@
 
         <section class="dashboard-card">
 
-
             <p class="eyebrow">
                 GPS STATUS
             </p>
-
 
             <h2 id="gpsStatus">
                 Ready
             </h2>
 
-
             <p
                 class="goal-text"
                 id="gpsMessage"
             >
-
-                Press Start Run to begin tracking
-                your location.
-
+                Press Start Run to begin tracking your location.
             </p>
 
         </section>
 
 
 
-        <!-- ================= MAP ================= -->
+        <!-- ================= LIVE MAP ================= -->
 
         <section class="dashboard-card">
-
 
             <div class="card-header">
 
@@ -198,7 +178,6 @@
                     <p class="eyebrow">
                         LIVE MAP
                     </p>
-
 
                     <h2>
                         Your Route
@@ -214,7 +193,6 @@
                 class="run-map"
             ></div>
 
-
         </section>
 
 
@@ -222,7 +200,6 @@
         <!-- ================= CONTROLS ================= -->
 
         <section class="run-controls">
-
 
             <button
                 id="startRun"
@@ -249,7 +226,6 @@
                 Finish Run
             </button>
 
-
         </section>
 
 
@@ -258,11 +234,9 @@
 
         <section class="dashboard-card">
 
-
             <p class="eyebrow">
                 ENERGY
             </p>
-
 
             <h2>
                 Calories
@@ -283,10 +257,7 @@
 
 
             <p class="goal-text">
-
-                Calories are estimated using your
-                profile information and running data.
-
+                Calories are estimated using your profile information and running data.
             </p>
 
         </section>
@@ -296,16 +267,16 @@
 
 
 
-    <!-- ================= LEAFLET ================= -->
+    <!-- ================= LEAFLET JS ================= -->
 
     <script
         src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     ></script>
 
 
-    <!-- ================= RUNOVA ================= -->
+    <!-- ================= RUNOVA JS ================= -->
 
-    <script src="js/app.js"></script>
+    <script src="./js/app.js?v=2"></script>
 
 
 </body>
