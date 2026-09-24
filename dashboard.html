@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | RUNOVA</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            RUN<span>OVA</span>
+
+        </div>
+
+
+        <div class="nav-buttons">
+
+            <!-- PROFILE -->
+
+            <a
+                href="profile.html"
+                class="login-btn"
+            >
+                Profile
+            </a>
+
+
+            <!-- USER NAME -->
+
+            <span id="dashboardName">
+                Athlete
+            </span>
+
+
+            <!-- LOGOUT -->
+
+            <button
+                id="logoutButton"
+                class="login-btn logout-button"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <main class="dashboard">
+
+
+        <!-- ================= HEADING ================= -->
+
+        <div class="dashboard-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    YOUR DASHBOARD
+                </p>
+
+
+                <h1>
+
+                    Welcome back,
+                    <span id="userName">
+                        Athlete
+                    </span>
+                    👋
+
+                </h1>
+
+            </div>
+
+
+            <!-- START RUN -->
+
+            <a
+                href="run.html"
+                class="primary-btn"
+            >
+                Start Run
+            </a>
+
+        </div>
+
+
+
+        <!-- ================= USER STATS ================= -->
+
+        <section class="stats-grid">
+
+
+            <!-- WEIGHT -->
+
+            <div class="stat-card">
+
+                <span>
+                    Weight
+                </span>
+
+
+                <strong id="userWeight">
+                    -- kg
+                </strong>
+
+            </div>
+
+
+
+            <!-- HEIGHT -->
+
+            <div class="stat-card">
+
+                <span>
+                    Height
+                </span>
+
+
+                <strong id="userHeight">
+                    -- cm
+                </strong>
+
+            </div>
+
+
+
+            <!-- AGE -->
+
+            <div class="stat-card">
+
+                <span>
+                    Age
+                </span>
+
+
+                <strong id="userAge">
+                    --
+                </strong>
+
+            </div>
+
+
+
+            <!-- BMI -->
+
+            <div class="stat-card">
+
+                <span>
+                    BMI
+                </span>
+
+
+                <strong id="userBMI">
+                    --
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= MAIN DASHBOARD ================= -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- ACTIVITY -->
+
+            <div class="dashboard-card large-card">
+
+
+                <div class="card-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            ACTIVITY
+                        </p>
+
+
+                        <h2>
+                            Your weekly progress
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="chart-placeholder">
+
+
+                    <div
+                        class="chart-bar"
+                        style="height:35%"
+                    ></div>
+
+
+                    <div
+                        class="chart-bar"
+                        style="height:55%"
+                    ></div>
+
+
+                    <div
+                        class="chart-bar"
+                        style="height:42%"
+                    ></div>
+
+
+                    <div
+                        class="chart-bar"
+                        style="height:75%"
+                    ></div>
+
+
+                    <div
+                        class="chart-bar"
+                        style="height:50%"
+                    ></div>
+
+
+                    <div
+                        class="chart-bar"
+                        style="height:90%"
+                    ></div>
+
+
+                    <div
+                        class="chart-bar"
+                        style="height:65%"
+                    ></div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= GOAL ================= -->
+
+            <div class="dashboard-card">
+
+                <p class="eyebrow">
+                    GOAL
+                </p>
+
+
+                <h2>
+                    Keep Moving
+                </h2>
+
+
+                <p class="goal-text">
+
+                    Start your first run and build
+                    your weekly activity.
+
+                </p>
+
+
+                <div class="progress">
+
+                    <div></div>
+
+                </div>
+
+
+                <small>
+                    0 / 20 km this week
+                </small>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- PROFILE -->
+
+            <div class="dashboard-card">
+
+                <p class="eyebrow">
+                    ACCOUNT
+                </p>
+
+
+                <h2>
+                    Your Profile
+                </h2>
+
+
+                <p class="goal-text">
+
+                    View and manage your personal
+                    information.
+
+                </p>
+
+
+                <a
+                    href="profile.html"
+                    class="primary-btn"
+                >
+                    Open Profile
+                </a>
+
+            </div>
+
+
+
+            <!-- RUNNING -->
+
+            <div class="dashboard-card">
+
+                <p class="eyebrow">
+                    TRAINING
+                </p>
+
+
+                <h2>
+                    Running
+                </h2>
+
+
+                <p class="goal-text">
+
+                    Track distance, pace, speed,
+                    calories and your running history.
+
+                </p>
+
+
+                <a
+                    href="run.html"
+                    class="primary-btn"
+                >
+                    Start Running
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
